@@ -2,6 +2,10 @@
 
 All notable changes to `Filament Offline Notice` will be documented in this file.
 
+## v4.0.0 - 2026-01-31
+
+**Full Changelog**: https://github.com/CharlieEtienne/filament-offline-notice/commits/4.0.0
+
 ## v3.0.0 - 2026-01-31
 
 **Full Changelog**: https://github.com/CharlieEtienne/filament-offline-notice/commits/3.0.0
