@@ -2,8 +2,10 @@
 
 namespace CharlieEtienne\FilamentOfflineNotice;
 
+use Livewire\Livewire;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
+use Filament\Support\Facades\FilamentAsset;
 use Livewire\Features\SupportTesting\Testable;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -17,19 +19,23 @@ class FilamentOfflineNoticeServiceProvider extends PackageServiceProvider
 
     public function configurePackage(Package $package): void
     {
-        if (file_exists($package->basePath('/../resources/lang'))) {
-            $package->hasTranslations();
-        }
-
-        if (file_exists($package->basePath('/../resources/views'))) {
-            $package->hasViews(static::$viewNamespace);
-        }
+        $package->name(static::$name)
+            ->hasTranslations()
+            ->hasViews(static::$viewNamespace);
     }
 
     public function packageRegistered(): void {}
 
     public function packageBooted(): void
     {
+        Livewire::component('filament-offline-notice', FilamentOfflineNotice::class);
+
+        // Asset Registration
+        FilamentAsset::register(
+            $this->getAssets(),
+            $this->getAssetPackageName()
+        );
+
         // Testing
         Testable::mixin(new TestsFilamentOfflineNotice);
     }
@@ -44,9 +50,7 @@ class FilamentOfflineNoticeServiceProvider extends PackageServiceProvider
      */
     protected function getAssets(): array
     {
-        return [
-            Css::make('filament-offline-notice-styles', __DIR__ . '/../resources/dist/filament-offline-notice.css'),
-        ];
+        return [];
     }
 
     /**

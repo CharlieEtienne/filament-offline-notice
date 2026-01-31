@@ -4,6 +4,7 @@
     "keywords": [
         "CharlieEtienne",
         "laravel",
+        "filamentphp",
         "filament-offline-notice"
     ],
     "homepage": "https://github.com/charlieetienne/filament-offline-notice",
@@ -38,8 +39,7 @@
     },
     "autoload": {
         "psr-4": {
-            "CharlieEtienne\\FilamentOfflineNotice\\": "src/",
-            "CharlieEtienne\\FilamentOfflineNotice\\Database\\Factories\\": "database/factories/"
+            "CharlieEtienne\\FilamentOfflineNotice\\": "src/"
         }
     },
     "autoload-dev": {
@@ -65,10 +65,7 @@
         "laravel": {
             "providers": [
                 "CharlieEtienne\\FilamentOfflineNotice\\FilamentOfflineNoticeServiceProvider"
-            ],
-            "aliases": {
-                "FilamentOfflineNotice": "CharlieEtienne\\FilamentOfflineNotice\\Facades\\FilamentOfflineNotice"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
