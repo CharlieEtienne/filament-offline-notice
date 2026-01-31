@@ -3,7 +3,6 @@
     wire:offline
 >
     <style>
-
         .animate-slide-up-enter {
             animation: slide-up-enter 0.3s cubic-bezier(0.4, 0, 1, 1) forwards;
         }
