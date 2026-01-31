@@ -41,8 +41,7 @@
     },
     "autoload": {
         "psr-4": {
-            "CharlieEtienne\\FilamentOfflineNotice\\": "src/",
-            "CharlieEtienne\\FilamentOfflineNotice\\Database\\Factories\\": "database/factories/"
+            "CharlieEtienne\\FilamentOfflineNotice\\": "src/"
         }
     },
     "autoload-dev": {
@@ -63,10 +62,7 @@
         "laravel": {
             "providers": [
                 "CharlieEtienne\\FilamentOfflineNotice\\FilamentOfflineNoticeServiceProvider"
-            ],
-            "aliases": {
-                "FilamentOfflineNotice": "CharlieEtienne\\FilamentOfflineNotice\\Facades\\FilamentOfflineNotice"
-            }
+            ]
         }
     },
     "config": {

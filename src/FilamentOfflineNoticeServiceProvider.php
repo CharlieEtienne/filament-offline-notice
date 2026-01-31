@@ -2,6 +2,7 @@
 
 namespace CharlieEtienne\FilamentOfflineNotice;
 
+use Livewire\Livewire;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
@@ -27,6 +28,8 @@ class FilamentOfflineNoticeServiceProvider extends PackageServiceProvider
 
     public function packageBooted(): void
     {
+        Livewire::component('filament-offline-notice', FilamentOfflineNotice::class);
+
         // Asset Registration
         FilamentAsset::register(
             $this->getAssets(),
