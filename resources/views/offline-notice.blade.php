@@ -1,5 +1,6 @@
 <div
     class="fixed bottom-5 w-full z-40 animate-slide-up-enter"
+    wire:offline
 >
     <style>
 
