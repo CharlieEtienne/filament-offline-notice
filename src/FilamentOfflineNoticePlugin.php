@@ -2,8 +2,11 @@
 
 namespace CharlieEtienne\FilamentOfflineNotice;
 
+use Livewire\Livewire;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Filament\View\PanelsRenderHook;
+use Filament\Support\Facades\FilamentView;
 
 class FilamentOfflineNoticePlugin implements Plugin
 {
@@ -19,7 +22,10 @@ class FilamentOfflineNoticePlugin implements Plugin
 
     public function boot(Panel $panel): void
     {
-        //
+        FilamentView::registerRenderHook(
+            PanelsRenderHook::BODY_START,
+            fn (): string => Livewire::mount(FilamentOfflineNotice::class),
+        );
     }
 
     public static function make(): static

@@ -1,7 +1,33 @@
 <div
     class="fixed bottom-5 w-full z-40 animate-slide-up-enter"
-    wire:offline
 >
+    <style>
+
+        .animate-slide-up-enter {
+            animation: slide-up-enter 0.3s cubic-bezier(0.4, 0, 1, 1) forwards;
+        }
+        .animate-offline {
+            animation: offline 1s 1s cubic-bezier(0, 0, 0.5, 1) infinite;
+        }
+
+        @keyframes slide-up-enter {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes offline {
+            75%, 100% {
+                transform: scale(1.1);
+                opacity: 0;
+            }
+        }
+    </style>
     <div class="flex items-center justify-center ">
         <span class="animate-offline absolute inline-flex h-[120%] w-72 max-w-72 bg-red-600 text-white px-4 py-3 rounded-xl m-auto text-center text-sm items-center justify-center opacity-50"></span>
         <div class="bg-red-600 text-white px-4 py-3 rounded-xl w-72 m-auto text-center text-sm flex items-center justify-center">

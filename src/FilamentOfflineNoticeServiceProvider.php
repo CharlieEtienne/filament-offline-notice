@@ -50,9 +50,7 @@ class FilamentOfflineNoticeServiceProvider extends PackageServiceProvider
      */
     protected function getAssets(): array
     {
-        return [
-            Css::make('filament-offline-notice-styles', __DIR__ . '/../resources/dist/filament-offline-notice.css'),
-        ];
+        return [];
     }
 
     /**
