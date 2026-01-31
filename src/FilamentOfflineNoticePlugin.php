@@ -1,15 +1,15 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace CharlieEtienne\FilamentOfflineNotice;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class SkeletonPlugin implements Plugin
+class FilamentOfflineNoticePlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'filament-offline-notice';
     }
 
     public function register(Panel $panel): void

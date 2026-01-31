@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace CharlieEtienne\FilamentOfflineNotice\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentOfflineNoticeCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-offline-notice';
 
     public $description = 'My command';
 
