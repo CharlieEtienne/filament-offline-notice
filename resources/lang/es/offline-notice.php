@@ -2,5 +2,5 @@
 
 // translations for CharlieEtienne/FilamentOfflineNotice
 return [
-    'connection_lost' => 'Conexión perdida...'
+    'connection_lost' => 'Conexión perdida...',
 ];

@@ -2,14 +2,13 @@
 
 namespace CharlieEtienne\FilamentOfflineNotice;
 
-use Livewire\Livewire;
+use CharlieEtienne\FilamentOfflineNotice\Testing\TestsFilamentOfflineNotice;
 use Filament\Support\Assets\Asset;
-use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
 use Livewire\Features\SupportTesting\Testable;
+use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use CharlieEtienne\FilamentOfflineNotice\Testing\TestsFilamentOfflineNotice;
 
 class FilamentOfflineNoticeServiceProvider extends PackageServiceProvider
 {

@@ -2,11 +2,11 @@
 
 namespace CharlieEtienne\FilamentOfflineNotice;
 
-use Livewire\Livewire;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
-use Filament\View\PanelsRenderHook;
 use Filament\Support\Facades\FilamentView;
+use Filament\View\PanelsRenderHook;
+use Livewire\Livewire;
 
 class FilamentOfflineNoticePlugin implements Plugin
 {
