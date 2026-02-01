@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/charlieetienne/filament-offline-notice/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/charlieetienne/filament-offline-notice/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/charlieetienne/filament-offline-notice.svg?style=flat-square)](https://packagist.org/packages/charlieetienne/filament-offline-notice)
 
-
+[!Filament Offline Notice](filament-offline-notice.png)
 
 A Filament plugin displaying a notice when you're offline.
 
